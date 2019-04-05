@@ -6,32 +6,28 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-        <script>
-            function cal(){
-
-var a=parseInt(document.getElementById('Inv').value)
-var b=parseInt(document.getElementById('Ret').value)
-var c=parseInt(document.getElementById('dur').value)
-
-mat= a*b/100*c+a
-console.log(mat)
-return mat;
-}
-        </script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
     </head>
     <body>
+        <div class="container">
         <h1>Predict Mutual Funds Returns</h1>
         <h2>Type of Investment</h2>
     <select>
   <option value="onetime">One time Investment</option>
 </select>
-<h2>Amount of Investment</h2>
+<h2>Amount of Investment<span class="badge badge-secondary">INR</span></h2>
 <input id="Inv" type="number" name="Investment" min="500">
-<h2>Expected Returns</h2>
+<h2>Expected Returns<span class="badge badge-secondary">%</span></h2>
 <input id ="Ret"type="number" value="Returns" min="0">
-<h2>Duration</h2>
+<div>
+<h2>Duration<span class="badge badge-secondary">yrs</span></h2>
 <input id ="dur" type="number" value="duration" min="0">
-<input type="submit" onclick="cal()">
+</div>
+
+<button class="btn btn-success" type="button" onclick="cal()">Check Profits</button>
+
+</div>
     </body>
 </html>
