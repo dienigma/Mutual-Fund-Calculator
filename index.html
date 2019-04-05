@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script>
+            function cal(){
+
+var a=document.getElementById('Inv').value
+var b=document.getElementById('Ret').value
+var c=document.getElementById('dur').value
+
+mat=parseInt
+console.log(mat)
+return mat;
+}
+        </script>
+    </head>
+    <body>
+        <h1>Predict Mutual Funds Returns</h1>
+        <h2>Type of Investment</h2>
+    <select>
+  <option value="onetime">One time Investment</option>
+</select>
+<h2>Amount of Investment</h2>
+<input id="Inv" type="number" name="Investment" min="500">
+<h2>Expected Returns</h2>
+<input id ="Ret"type="number" value="Returns" min="0">
+<h2>Duration</h2>
+<input id ="dur" type="number" value="duration" min="0">
+<input type="submit" onclick="cal()">
+    </body>
+</html>
