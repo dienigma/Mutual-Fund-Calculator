@@ -5,6 +5,8 @@ function cal(){
     var c=parseInt(document.getElementById('dur').value)
     
     mat= a*b/100*c+a
-    console.log(mat)
-    return mat;
+    interest=a*b/100*c
+    document.getElementById('tt').innerHTML=`<b> ${mat} INR</b>`
+    document.getElementById('ii').innerHTML=`<b> ${interest} INR</b>`
+    
     }
