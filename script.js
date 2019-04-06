@@ -6,7 +6,7 @@ function cal(){
     
     total= a*b/100*c+a
     interest=a*b/100*c
-    document.getElementById('tt').innerHTML=`<b> ${total} INR</b>`
-    document.getElementById('ii').innerHTML=`<b> ${interest} INR</b>`
+    document.getElementById('total').innerHTML=`<b> ${total} INR</b>`
+    document.getElementById('interest').innerHTML=`<b> ${interest} INR</b>`
     
     }
