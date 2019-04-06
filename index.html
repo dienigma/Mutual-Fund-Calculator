@@ -9,25 +9,42 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="container">
-        <h1>Predict Mutual Funds Returns</h1>
+<div class="container" >
+          
+ <h1>Predict Mutual Funds Returns</h1>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+
+  <div class="row">
+    <div class="col" style="background-color:lavender;">
         <h2>Type of Investment</h2>
-    <select>
-  <option value="onetime">One time Investment</option>
-</select>
-<h2>Amount of Investment<span class="badge badge-secondary">INR</span></h2>
-<input id="Inv" type="number" name="Investment" min="500">
-<h2>Expected Returns<span class="badge badge-secondary">%</span></h2>
-<input id ="Ret"type="number" value="Returns" min="0">
-<div>
-<h2>Duration<span class="badge badge-secondary">yrs</span></h2>
-<input id ="dur" type="number" value="duration" min="0">
+        <div class='dropdown'>
+       <select>
+         <option value="onetime">One time Investment</option>
+       </select>
+       </div>
+       <h2>Amount of Investment<span class="badge badge-secondary">INR</span></h2>
+       <input id="Inv" type="number" name="Investment" min="500">
+       <h2>Expected Returns<span class="badge badge-secondary">%</span></h2>
+       <input id ="Ret"type="number" value="Returns" min="0">
+       <div>
+       <h2>Duration<span class="badge badge-secondary">yrs</span></h2>
+       <input id ="dur" type="number" value="duration" min="0">
+       </div>
+       <button class="btn btn-success" type="button" onclick="cal()">Check Profits</button>
+       </div>
+    
+    <div class="col" style="background-color:lavender">
+        <h2>Your Total Returns</h2>
+            <div class="div1"><p id="tt"></p></div>
+            <br>
+            <h2>Total Interest Earned</h2>
+            <div class="div2"><p id="ii"></p></div>
+    
+  </div>
 </div>
-
-<button class="btn btn-success" type="button" onclick="cal()">Check Profits</button>
-
-</div>
+<br>
+<p>Note:This is a simple calculator which computes only simple interest of your one time investement for a given duration of time</p>
     </body>
 </html>
