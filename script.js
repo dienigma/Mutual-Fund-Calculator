@@ -1,8 +1,8 @@
 function cal(){
 
-    var a=parseInt(document.getElementById('Inv').value)
-    var b=parseInt(document.getElementById('Ret').value)
-    var c=parseInt(document.getElementById('dur').value)
+    var a=parseFloat(document.getElementById('Inv').value)
+    var b=parseFloat(document.getElementById('Ret').value)
+    var c=parseFloat(document.getElementById('dur').value)
     
     mat= a*b/100*c+a
     interest=a*b/100*c
